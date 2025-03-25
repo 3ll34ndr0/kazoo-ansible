@@ -10,13 +10,16 @@ echo "    Ansible  Bootstrap    "
 echo ""
 
 echo "Installing Prerequisites"
-sudo yum install -y git ansible
+sudo dnf install -y epel-release
+sudo dnf install -y git ansible
+
 
 echo "Cloning kazoo-ansible Repository"
-git clone https://github.com/kazoo-ansible/kazoo-ansible ~/kazoo-ansible
+git clone https://github.com/3ll34ndr0/kazoo-ansible ~/kazoo-ansible
 
-echo "Installing kazoo-ansible Roles"
-sudo ansible-galaxy install -r ~/kazoo-ansible/requirements.yml
+# Bypass this by now.
+#echo "Installing kazoo-ansible Roles"
+#sudo ansible-galaxy install -r ~/kazoo-ansible/requirements.yml
 
 if [ -e ~/.ssh/id_rsa -a -e ~/.ssh/id_rsa.pub ]
 then
