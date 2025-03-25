@@ -4,41 +4,41 @@
   roles:
   - kazoo-ansible.common
 
-- hosts: couchdb
-  become: true
-  roles:
-  - kazoo-ansible.couchdb
-  # Uncomment couchdb-google-storage-backup to add daily backup 
-  # scripts to backup CouchDB to Google Cloud Storage
-  # - kazoo-ansible.couchdb-google-storage-backup
+#- hosts: couchdb
+#  become: true
+#  roles:
+#  - kazoo-ansible.couchdb
+#  # Uncomment couchdb-google-storage-backup to add daily backup 
+#  # scripts to backup CouchDB to Google Cloud Storage
+#  # - kazoo-ansible.couchdb-google-storage-backup
 
-- hosts: rabbitmq
-  become: true
-  roles:
-  - kazoo-ansible.rabbitmq
+#- hosts: rabbitmq
+#  become: true
+#  roles:
+#  - kazoo-ansible.rabbitmq
 
-- hosts: freeswitch
-  become: true
-  roles:
-  - kazoo-ansible.freeswitch
+#- hosts: freeswitch
+#  become: true
+#  roles:
+#  - kazoo-ansible.freeswitch
 
 - hosts: kamailio
   become: true
   roles:
   - kazoo-ansible.kamailio
 
-- hosts: kazoo
-  become: true
-  roles:
-  - kazoo-ansible.kazoo
+#- hosts: kazoo
+#  become: true
+#  roles:
+#  - kazoo-ansible.kazoo
 
-- hosts: monsterui
-  become: true
-  roles:
-  - kazoo-ansible.monsterui
+#- hosts: monsterui
+#  become: true
+#  roles:
+#  - kazoo-ansible.monsterui
 
-- hosts: all
-  become: true
-  roles:
-  - kazoo-ansible.updates
+#- hosts: all
+#  become: true
+#  roles:
+#  - kazoo-ansible.updates
 
