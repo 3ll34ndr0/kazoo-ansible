@@ -70,3 +70,4 @@ couch_password: 7865Fihfa34f3wfawe4F
 # couchdb_google_storage_backup_service_account_key: |
 #   Your Google Cloud Service credentials.json contents here
 
+sql_kamailio_user_password: DO_NOT_STORE_THIS_IN_GIT_REPO
